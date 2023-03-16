@@ -1,8 +1,6 @@
 // ++++++ вариант 1 (с blur и реакцией на enter)+++++++++++++++
 /*const inpEl = document.querySelector("#name-input");
 const spanEl = document.querySelector("#name-output");
-console.log(inpEl);
-console.log(spanEl);
 const  inputClick = () => {
     if (inpEl.value === '') { return }
     else {
@@ -19,8 +17,6 @@ inpEl.addEventListener('blur', inputClick);*/
 // ++++++ вариант 2 (только input, как просили в ТЗ)+++++++++++++++
 const inpEl = document.querySelector("#name-input");
 const spanEl = document.querySelector("#name-output");
-console.log(inpEl);
-console.log(spanEl);
 const  inputClick = () => {
     if (inpEl.value === '') {
         spanEl.textContent = 'Anonymous';

@@ -1,6 +1,6 @@
 const formEl = document.querySelector(".login-form");
-console.log(formEl);
 formEl.addEventListener("submit", checkSubmit);
+
 function checkSubmit(event) {
     event.preventDefault();
    const {
@@ -16,9 +16,10 @@ function checkSubmit(event) {
     console.log(result);
     event.currentTarget.reset();
 };
+
 //++++++++++++++++Variant 2++++++ result is Global object +++++++++++++++
 /*const formEl = document.querySelector(".login-form");
-console.log(formEl);
+
 const result = {};
 formEl.addEventListener("submit", checkSubmit);
 function checkSubmit(event) {
