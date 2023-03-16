@@ -1,6 +1,6 @@
 const inpEl = document.querySelector("#validation-input");
 const inputClick = (event) => {
-    if (inpEl.value.length === Number(event.currentTarget.dataset.length)) {
+    if (inpEl.value.trim().length === Number(event.currentTarget.dataset.length)) {
         inpEl.classList.remove("invalid");
         inpEl.classList.add("valid");
     }

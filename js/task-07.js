@@ -5,4 +5,4 @@ const inputClick = () => {
     spanEl.style.fontSize = inpEl.value + "px"
 };
 
-inpEl.addEventListener('change', inputClick);
+inpEl.addEventListener('input', inputClick);

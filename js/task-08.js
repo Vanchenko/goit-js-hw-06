@@ -6,12 +6,12 @@ function checkSubmit(event) {
    const {
     elements: { email, password }
     } = event.currentTarget; 
-    if (email.value === "" || password.value === "") {
+    if (email.value.trim() === "" || password.value.trim() === "") {
     return alert("Please fill in all the fields!");
     }
     const result = {
-        [email.name] : email.value,
-        [password.name] : password.value,
+        [email.name] : email.value.trim(),
+        [password.name] : password.value.trim(),
     };
     console.log(result);
     event.currentTarget.reset();
@@ -27,11 +27,11 @@ function checkSubmit(event) {
    const {
     elements: { email, password }
     } = event.currentTarget; 
-    if (email.value === "" || password.value === "") {
+    if (email.value.trim() === "" || password.value.trim() === "") {
     return alert("Please fill in all the fields!");
   }
-    result[email.name] = email.value;
-    result[password.name] = password.value;
+    result[email.name] = email.value.trim();
+    result[password.name] = password.value.trim();
     event.currentTarget.reset();
 };
 console.log(result)*/
